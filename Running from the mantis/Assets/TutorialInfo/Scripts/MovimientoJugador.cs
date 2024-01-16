@@ -11,7 +11,7 @@ public class MovimientoJugador : MonoBehaviour
 
     public float playerSpeed;
     public float gravity;
-    //public float fallVelocity;
+    
     public float jumpForce;
 
     private Vector3 movePlayer;
@@ -21,6 +21,7 @@ public class MovimientoJugador : MonoBehaviour
     private void Start()
     {
         player = GetComponent<CharacterController>();
+
     }
 
     private void Update()
@@ -60,6 +61,10 @@ public class MovimientoJugador : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        spawnManager.SpawnTrigger();
+        if (other.CompareTag("Spawn"))
+        {
+            spawnManager.SpawnTrigger();
+
+        }
     }
 }
