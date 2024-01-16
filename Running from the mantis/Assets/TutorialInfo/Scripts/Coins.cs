@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Coins : MonoBehaviour
 {
+    ControladorPuntuacion gameManagement;
+
+    private void Start()
+    {
+        gameManagement = GameObject.FindGameObjectWithTag("GameController").GetComponent<ControladorPuntuacion>();
+    }
     private void Update()
     {
         transform.Rotate(0, 20 * Time.deltaTime, 0);//cambiar al eje que se necesite
@@ -13,9 +20,8 @@ public class Coins : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             
-            ControladorPuntuacion controladorPuntaje = collision.GetComponent<ControladorPuntuacion>();
-            controladorPuntaje.restarPuntos(100);
-            controladorPuntaje.getPuntos();
+            gameManagement.sumarPuntos(100);
+            gameManagement.getPuntos();
         }
         
     }

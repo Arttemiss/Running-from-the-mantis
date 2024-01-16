@@ -1,29 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ControladorPuntuacion : MonoBehaviour
 {
-    private int puntaje = 0;
-    public Text textoPuntos;
+    public int puntaje = 0;
+    public TextMeshProUGUI textoPuntos;
 
 
-    public void restarPuntos(int puntos)
+    public void sumarPuntos(int puntos)
     {
-        puntaje -= puntos;
+        puntaje += puntos;
         
 
     }
     private void Update()
     {
-        textoPuntos.text = "Puntos" + textoPuntos.ToString();
+        textoPuntos.text = "Puntos: " + puntaje.ToString();
+       
 
     }
 
     public void getPuntos()
     {
-        print(puntaje); //provisional
+        print(puntaje);
         //return puntaje;
     }
 }
