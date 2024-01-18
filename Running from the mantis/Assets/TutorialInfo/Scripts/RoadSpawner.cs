@@ -7,6 +7,7 @@ public class RoadSpawner : MonoBehaviour
 {
     public List<GameObject> roads;
     float offset = 30f; 
+    public SpawnObtaculos spawnObtaculos;
 
     void Start()
     {
@@ -14,6 +15,7 @@ public class RoadSpawner : MonoBehaviour
         {
             roads = roads.OrderBy(r => r.transform.position.z).ToList();
         }
+        spawnObtaculos.InicializarObstaculos(roads);
     }
 
     
@@ -24,5 +26,7 @@ public class RoadSpawner : MonoBehaviour
         float newZ = roads[roads.Count-1].transform.position.z + offset;
         moveRoad.transform.position = new Vector3(0,0, newZ);
         roads.Add(moveRoad);
+
+        spawnObtaculos.SpawnEnCarretera(moveRoad);
     }
 }

@@ -739,7 +739,7 @@ PrefabInstance:
     - target: {fileID: 1536523866334630152, guid: dba1c74ae12c0de4580df96c68521f2c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.57
+      value: -9.18
       objectReference: {fileID: 0}
     - target: {fileID: 1536523866334630152, guid: dba1c74ae12c0de4580df96c68521f2c,
         type: 3}
@@ -960,6 +960,7 @@ GameObject:
   - component: {fileID: 1456961948}
   - component: {fileID: 1456961947}
   - component: {fileID: 1456961949}
+  - component: {fileID: 1456961950}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -986,6 +987,7 @@ MonoBehaviour:
   - {fileID: 899703996}
   - {fileID: 888730753}
   - {fileID: 1537963507}
+  spawnObtaculos: {fileID: 1456961950}
 --- !u!4 &1456961948
 Transform:
   m_ObjectHideFlags: 0
@@ -1013,6 +1015,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b5e68fc6a0d9014b8f991e6b4d1cd05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1456961950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456961946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4da75b589221ca498019c64765e2ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ratioSpawn: 2
+  obstacles:
+  - {fileID: 2776826695957251494, guid: f2ec02110d4503546b1eed4a2149ce7f, type: 3}
 --- !u!1 &1537963507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2661528503691160676, guid: 3c29a2322fdc195428190578804ac9a4,
