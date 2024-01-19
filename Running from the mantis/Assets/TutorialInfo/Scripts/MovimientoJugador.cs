@@ -66,5 +66,10 @@ public class MovimientoJugador : MonoBehaviour
             spawnManager.SpawnTrigger();
 
         }
+        if (other.CompareTag("Obstacle"))
+        {
+            Debug.Log("Game Over");
+            levelManager.LM.GameOver();
+        }
     }
 }
