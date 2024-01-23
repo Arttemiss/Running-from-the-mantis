@@ -6,26 +6,38 @@ using UnityEngine.UI;
 
 public class ControladorPuntuacion : MonoBehaviour
 {
-    public int puntaje = 0;
-    public TextMeshProUGUI textoPuntos;
+    public float timer = 0;
 
+    public TextMeshProUGUI textoTimerPro;
 
     public void sumarPuntos(int puntos)
     {
-        puntaje += puntos;
         
-
+        timer += puntos;
+       
     }
     private void Update()
     {
-        textoPuntos.text = "Puntos: " + puntaje.ToString();
+        timer -= Time.deltaTime;
+
+        textoTimerPro.text = "" + timer.ToString("f1");
+
+        textoTimerPro.text = "Puntos: " + timer.ToString();
        
+        if (timer < 0)
+        {
+            Debug.Log("Game Over");
+            levelManager.LM.GameOver();
+        }
 
     }
 
     public void getPuntos()
     {
-        print(puntaje);
+        print(timer);
         //return puntaje;
     }
+
+
+
 }

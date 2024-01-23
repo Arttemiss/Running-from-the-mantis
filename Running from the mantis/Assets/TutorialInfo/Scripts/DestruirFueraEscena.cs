@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class DestruirFueraEscena : MonoBehaviour
 {
+    float limite = -10;
     Transform player;
-
-    float yoffset = 6;
-    float zoffset = -7;
     
     void Start()
     {
@@ -15,8 +13,11 @@ public class CameraController : MonoBehaviour
     }
 
     
-    void LateUpdate()
+    void Update()
     {
-        transform.position = new Vector3(0, player.position.y + yoffset, player.position.z + zoffset);
+        if(transform.position.z < player.position.z+limite)
+        {
+            Destroy(gameObject);
+        }
     }
 }

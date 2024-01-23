@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnObtaculos : MonoBehaviour
@@ -26,8 +27,12 @@ public class SpawnObtaculos : MonoBehaviour
                 GameObject obstacle = obstacles[Random.Range(0, obstacles.Count)];
                 float ramdomX = Random.Range(-9f, 9f);
                 float ramdomZ = Random.Range(-5f, 5f);
-                Instantiate(obstacle, new Vector3(ramdomX, 0.25f, roadZ + ramdomZ) , obstacle .transform.rotation); 
+                Instantiate(obstacle, new Vector3(ramdomX, 0.25f, roadZ + ramdomZ) , obstacle .transform.rotation);
+               
             }
+            
         }
     }
+    
+
 }
