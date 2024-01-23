@@ -20,7 +20,7 @@ public class Coins : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             
-            gameManagement.sumarPuntos(100);
+            gameManagement.sumarPuntos(20);
             gameManagement.getPuntos();
         }
         
