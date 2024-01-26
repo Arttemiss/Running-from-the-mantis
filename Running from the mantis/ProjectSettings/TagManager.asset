@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Obstacles
   - Pico
+  - botas
   layers:
   - Default
   - TransparentFX

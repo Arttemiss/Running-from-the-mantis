@@ -23,7 +23,7 @@ public class ControladorPuntuacion : MonoBehaviour
 
         textoTimerPro.text = "" + timer.ToString("f1");
 
-        textoTimerPro.text = "Puntos: " + timer.ToString();
+        textoTimerPro.text = "" + timer.ToString();
        
         if (timer <= 0)
         {

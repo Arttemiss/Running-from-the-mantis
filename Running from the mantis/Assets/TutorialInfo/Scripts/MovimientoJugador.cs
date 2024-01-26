@@ -90,10 +90,10 @@ public class MovimientoJugador : MonoBehaviour
 
     public void PlayerSkills()
     {
-        if (player.isGrounded && Input.GetButtonDown("Jump"))
+        if (player.isGrounded && Input.GetButtonDown("Jump") && botas)
         {
-            movePlayer.y = Mathf.Sqrt(2 * jumpForce * gravity);
-           
+            movePlayer.y = Mathf.Sqrt(7 * jumpForce * gravity);
+           botas = false;
         }
     }
 
@@ -106,8 +106,15 @@ public class MovimientoJugador : MonoBehaviour
         }
        
     }
+
+
+
+    
+
     private void OnTriggerEnter(Collider other)
     {
+       
+        
         if (other.CompareTag("Spawn"))
         {
             spawnManager.SpawnTrigger();
@@ -115,12 +122,27 @@ public class MovimientoJugador : MonoBehaviour
         }
         if (other.CompareTag("Pico"))
         {
-            if (!botas)
+            if (!botas) //|| !otro)
             {
                 pico = true;
 
             }
             Destroy(other.gameObject);
+        }
+
+        //intento doble salto
+        if (other.CompareTag("botas"))
+        {
+            if(!pico)
+            {
+                botas = true;
+                Destroy(other.gameObject);
+            }
+            else
+            {
+                Destroy(other.gameObject);
+
+            }
         }
 
         if (other.CompareTag("Obstacle"))

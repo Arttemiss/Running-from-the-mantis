@@ -13,7 +13,7 @@ public class Coins : MonoBehaviour
     }
     private void Update()
     {
-        transform.Rotate(0, 20 * Time.deltaTime, 0);//cambiar al eje que se necesite
+        transform.Rotate(0, 0, 20 * Time.deltaTime);//cambiar al eje que se necesite
     }
     private void OnTriggerEnter(Collider collision)
     {
