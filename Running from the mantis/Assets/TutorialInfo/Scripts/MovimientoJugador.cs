@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class MovimientoJugador : MonoBehaviour
     public float jumpForce;
 
     private Vector3 movePlayer;
-    private Vector3 playerInput;
+    //private Vector3 playerInput;
     public SpawnManager spawnManager;
 
     public Transform[] carriles;
@@ -25,6 +26,8 @@ public class MovimientoJugador : MonoBehaviour
     bool muerte = false;
     public bool pico = false;
     public bool botas = false;
+    public bool iman = false;
+    public bool gafas = false;
 
     private void Start()
     {
@@ -122,7 +125,7 @@ public class MovimientoJugador : MonoBehaviour
         }
         if (other.CompareTag("Pico"))
         {
-            if (!botas) //|| !otro)
+            if (!botas || !iman || !gafas) //|| !otro)
             {
                 pico = true;
 
@@ -130,10 +133,28 @@ public class MovimientoJugador : MonoBehaviour
             Destroy(other.gameObject);
         }
 
+        if (other.CompareTag("iman"))
+        {
+            if (!pico || !botas || !gafas)
+            {
+                iman = true;
+            }
+            Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("gafas"))
+        {
+            if (!pico || !botas || !iman)
+            {
+                gafas = true;
+            }
+            Destroy(other.gameObject);
+        }
+
         //intento doble salto
         if (other.CompareTag("botas"))
         {
-            if(!pico)
+            if(!pico || !iman || !gafas)
             {
                 botas = true;
                 Destroy(other.gameObject);
@@ -160,5 +181,7 @@ public class MovimientoJugador : MonoBehaviour
 
             }
         }
+
+        
     }
 }

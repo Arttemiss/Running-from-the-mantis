@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7dd819dd8184559498151e4256676c77
+guid: 166dbd5e454bb7646bbe3b237fc93701
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Cristal
-    second: {fileID: 2100000, guid: d153f99caa7c84b4ba34cec92744e54b, type: 2}
+      name: Textura cueva.001
+    second: {fileID: 2100000, guid: 84950e19fb445164eb6b0d703741f35d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -75,13 +75,13 @@ ModelImporter:
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
-    normalSmoothAngle: 0
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
-    normalSmoothingSource: 2
+    normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
   humanDescription:

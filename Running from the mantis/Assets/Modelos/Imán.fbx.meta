@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 7dd819dd8184559498151e4256676c77
+guid: 86e350517dd45c94abbcafb1fa1820e3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cristal
-    second: {fileID: 2100000, guid: d153f99caa7c84b4ba34cec92744e54b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -75,13 +70,13 @@ ModelImporter:
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
-    normalSmoothAngle: 0
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
-    normalSmoothingSource: 2
+    normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
   humanDescription:

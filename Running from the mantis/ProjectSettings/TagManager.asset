@@ -10,6 +10,9 @@ TagManager:
   - Obstacles
   - Pico
   - botas
+  - iman
+  - gafas
+  - Coin Detector
   layers:
   - Default
   - TransparentFX
