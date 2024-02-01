@@ -17,7 +17,7 @@ public class ControladorPuntuacion : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("timer "+timer);
+        //Debug.Log("timer "+timer);
 
         timer -= Time.deltaTime;
 
