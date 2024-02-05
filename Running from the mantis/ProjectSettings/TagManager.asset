@@ -13,6 +13,7 @@ TagManager:
   - iman
   - gafas
   - Coin Detector
+  - burbuja
   layers:
   - Default
   - TransparentFX

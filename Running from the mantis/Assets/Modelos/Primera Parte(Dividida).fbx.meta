@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a75a199254fcd0744a928b2ebb757145
+guid: 3eec24af18df5d74abb99cd02ee75ea9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Crsital.002
+      name: Crsital.001
     second: {fileID: 2100000, guid: af15961e5df9d8c42a3487a9589d5227, type: 2}
   - first:
       type: UnityEngine:Material

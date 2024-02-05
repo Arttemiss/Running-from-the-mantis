@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ab495a1b2ece364d89dec08caf10d54
+guid: 52338f2dbf24ee440b18cf5229e219fd
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -12,7 +12,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Textura cueva.001
+      name: Textura cueva.004
     second: {fileID: 2100000, guid: 84950e19fb445164eb6b0d703741f35d, type: 2}
   materials:
     materialImportMode: 2

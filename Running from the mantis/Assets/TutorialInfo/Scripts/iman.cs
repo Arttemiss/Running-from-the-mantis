@@ -4,31 +4,31 @@ using UnityEngine;
 
 public class iman : MonoBehaviour
 {
-    public float forceFactor = 200f;
-
-    List<Rigidbody> rgbCoins = new List<Rigidbody>();
-
-    Transform magnetPoint;
+    public GameObject coinDetectorObj;
 
     private void Start()
     {
-        magnetPoint = GetComponent<Transform>();
+        coinDetectorObj = GameObject.FindGameObjectWithTag("Coin Detector");
+        coinDetectorObj.SetActive(false);
     }
 
-    private void FixedUpdate()
-    {
-        foreach (Rigidbody rb in rgbCoins)
-        {
-            rb.AddForce((magnetPoint.position - rb.position) * forceFactor * Time.fixedDeltaTime);
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Coin"))rgbCoins.Add(other.GetComponent<Rigidbody>());
+        //Debug.Log("Odio mi vida");
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Porque!!!");
+            ActivationCoin();
+            Destroy(transform.GetChild(0).gameObject);
+        }
     }
-
-    private void OnTriggerExit(Collider other)
+    private void ActivationCoin()
     {
-        if (other.CompareTag("Coin"))rgbCoins.Remove(other.GetComponent<Rigidbody>());
+        coinDetectorObj.SetActive(true);
+        Invoke("DeactivateCoin", 4f);
+    }
+    private void DeactivateCoin()
+    {
+        coinDetectorObj.SetActive(false );
     }
 }

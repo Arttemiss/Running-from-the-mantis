@@ -85,7 +85,7 @@ public class MovimientoJugador : MonoBehaviour
     public void MoverJugador()
     {
         player.enabled = false;
-        transform.position = new Vector3(carriles[carrilActual].position.x, transform.position.y, transform.position.z+1.3f);
+        transform.position = new Vector3(carriles[carrilActual].position.x, transform.position.y+0.2f, transform.position.z+1.3f);
         player.enabled = true;
     }
 
@@ -133,14 +133,14 @@ public class MovimientoJugador : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        if (other.CompareTag("iman"))
+        /*if (other.CompareTag("iman"))
         {
             if (!pico || !botas || !gafas)
             {
                 iman = true;
             }
             Destroy(other.gameObject);
-        }
+        }*/
 
         if (other.CompareTag("gafas"))
         {

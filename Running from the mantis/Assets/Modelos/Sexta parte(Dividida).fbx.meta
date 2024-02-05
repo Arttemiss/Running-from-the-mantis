@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8740bbba7b4440e4087b23e8af8263b9
+guid: ac6421d8cfe1f834a8da9007539132de
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,7 +7,17 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Textura cueva.001
+      name: Crsital.003
+    second: {fileID: 2100000, guid: af15961e5df9d8c42a3487a9589d5227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crsital.004
+    second: {fileID: 2100000, guid: af15961e5df9d8c42a3487a9589d5227, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Textura cueva.006
     second: {fileID: 2100000, guid: 84950e19fb445164eb6b0d703741f35d, type: 2}
   materials:
     materialImportMode: 2
