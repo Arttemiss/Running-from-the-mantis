@@ -7,7 +7,7 @@ public class Game : MonoBehaviour
 {
     public void GameMenu()
     {
-        SceneManager.LoadScene("PauseMenu");
+        SceneManager.LoadScene("SampleScene");
 
     }
 }
