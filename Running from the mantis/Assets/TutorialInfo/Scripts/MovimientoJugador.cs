@@ -98,6 +98,10 @@ public class MovimientoJugador : MonoBehaviour
             movePlayer.y = Mathf.Sqrt(7 * jumpForce * gravity);
            botas = false;
         }
+        if (player.isGrounded && Input.GetButtonDown("Jump") && !botas)
+        {
+            movePlayer.y = Mathf.Sqrt(2 * jumpForce * gravity);
+        }
     }
 
     public void SetGravity()
