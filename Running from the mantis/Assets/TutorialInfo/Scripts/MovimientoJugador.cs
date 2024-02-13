@@ -13,7 +13,8 @@ public class MovimientoJugador : MonoBehaviour
 
     public float playerSpeed;
     public float gravity;
-    
+    private Animator animator;
+
     public float jumpForce;
 
     private Vector3 movePlayer;
@@ -32,6 +33,7 @@ public class MovimientoJugador : MonoBehaviour
     private void Start()
     {
         player = GetComponent<CharacterController>();
+        animator = transform.GetChild(2).GetComponent<Animator>();
 
     }
 
@@ -96,13 +98,33 @@ public class MovimientoJugador : MonoBehaviour
         if (player.isGrounded && Input.GetButtonDown("Jump") && botas)
         {
             movePlayer.y = Mathf.Sqrt(7 * jumpForce * gravity);
-           botas = false;
+            botas = false;
+            animator.SetBool("Saltar", true);
+            Invoke("TocaHierba", 90f);
+
         }
         if (player.isGrounded && Input.GetButtonDown("Jump") && !botas)
         {
             movePlayer.y = Mathf.Sqrt(2 * jumpForce * gravity);
+            animator.SetBool("Saltar", true);
+            Invoke("TocaHierba", 1.3f);
+
+
         }
+        if (player.isGrounded && Input.GetButtonDown("Vertical"))
+        {
+            animator.SetBool("Deslizarse", true);
+            //Invoke("noagachada", 0.5f);
+        }
+
     }
+
+    public void TocaHierba()
+    {
+        animator.SetBool("Saltar", false);
+    }
+
+
 
     public void SetGravity()
     {

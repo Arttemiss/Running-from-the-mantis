@@ -1,73 +1,13 @@
 fileFormatVersion: 2
-guid: dc9e88a84d303fb479ccce315ac4bf06
+guid: ef2d3e12b4af47048828e9ace14d3367
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Carreta oscuridad
-    second: {fileID: 2100000, guid: d9d4bc1cbc2f36d49a385ba6de4d1601, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Crsital.001
-    second: {fileID: 2100000, guid: 77bdb9d5b703fa54d96ef799e5587889, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cueva
-    second: {fileID: 2100000, guid: 9e6dd21eafaf9854cbb131fe10dd868e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Interior ruedas
-    second: {fileID: 2100000, guid: 8f54ea5914fb16a43b38a96c86fe4f8a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Parte inferior vagon
-    second: {fileID: 2100000, guid: a097f4ce94a960d47bac37e34ba48ddc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Principal vagon
-    second: {fileID: 2100000, guid: 7c539045136d1ea438a8b4f0c6b4247b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ruedas
-    second: {fileID: 2100000, guid: 445127412f218d848b15a9c64ed9cb75, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Textura cueva.001
-    second: {fileID: 2100000, guid: 60e4057682788984a9bcbf60fc6424fe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: defaultMat
-    second: {fileID: 2100000, guid: e9bbef49bafb86742afda8f6eb0674d1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: madera.001
-    second: {fileID: 2100000, guid: f3b157fdb8e1d5b49b6d34e1ca37e2ef, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: madera.002
-    second: {fileID: 2100000, guid: 19de3d0838ceabb4697d9f9a647bddd8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: madera.003
-    second: {fileID: 2100000, guid: 881704535e36acc46b61a3bd89c71555, type: 2}
+  externalObjects: {}
   materials:
-    materialImportMode: 1
-    materialName: 1
-    materialSearch: 2
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
