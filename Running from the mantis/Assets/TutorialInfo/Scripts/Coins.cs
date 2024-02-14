@@ -25,7 +25,6 @@ public class Coins : MonoBehaviour
     {
         if (collision.CompareTag("burbuja"))
         {
-            
             gameManagement.sumarPuntos(5);
             gameManagement.getPuntos();
         }
