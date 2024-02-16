@@ -71,6 +71,7 @@ public class MovimientoJugador : MonoBehaviour
             carrilActual--;
             MoverJugador();
             Debug.Log("Mover Izquierda");
+            animator.SetBool("Deslizarse_izq", true);
         }
     }
 
@@ -159,14 +160,14 @@ public class MovimientoJugador : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        /*if (other.CompareTag("iman"))
+        if (other.CompareTag("iman"))
         {
             if (!pico || !botas || !gafas)
             {
                 iman = true;
             }
             Destroy(other.gameObject);
-        }*/
+        }
 
         if (other.CompareTag("gafas"))
         {
