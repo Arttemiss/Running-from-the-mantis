@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9d3de389f31defb4c95346e0e130ffca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.13
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9d3de389f31defb4c95346e0e130ffca,
         type: 3}
@@ -78,10 +78,35 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4267248930567435755, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.044
+      objectReference: {fileID: 0}
     - target: {fileID: -4190257578230124005, guid: 9d3de389f31defb4c95346e0e130ffca,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: -3720390608327451211, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3365304819659794543, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2591156660403817240, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2311505668009612937, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.044
       objectReference: {fileID: 0}
     - target: {fileID: -1076639699520395223, guid: 9d3de389f31defb4c95346e0e130ffca,
         type: 3}
@@ -103,10 +128,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstaculo2
       objectReference: {fileID: 0}
+    - target: {fileID: 4522250347715132166, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5705911418175445646, guid: 9d3de389f31defb4c95346e0e130ffca,
         type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6072107518923093352, guid: 9d3de389f31defb4c95346e0e130ffca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6832967795913132909, guid: 9d3de389f31defb4c95346e0e130ffca,
         type: 3}

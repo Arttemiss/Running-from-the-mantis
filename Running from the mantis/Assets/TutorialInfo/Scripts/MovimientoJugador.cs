@@ -44,12 +44,20 @@ public class MovimientoJugador : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A)&& !muerte)
         {
+            animator.SetBool("Deslizar_izq", true);
             moverIzquierda();
 
         }
         else if (Input.GetKeyDown(KeyCode.D)&& !muerte)
         {
             moverDerecha();
+            animator.SetBool("Deslizar_derech", true);
+         
+        }
+        else
+        {
+            animator.SetBool("Deslizar_derech", false);
+            animator.SetBool("Deslizar_izq", true);
         }
 
         
@@ -71,6 +79,7 @@ public class MovimientoJugador : MonoBehaviour
             carrilActual--;
             MoverJugador();
             Debug.Log("Mover Izquierda");
+            //animator.SetBool("Deslizarse_izq", true);
         }
     }
 
@@ -87,7 +96,7 @@ public class MovimientoJugador : MonoBehaviour
     public void MoverJugador()
     {
         player.enabled = false;
-        transform.position = new Vector3(carriles[carrilActual].position.x, transform.position.y+0.2f, transform.position.z+1.3f);
+        transform.position = new Vector3(carriles[carrilActual].position.x, transform.position.y+0.2f, transform.position.z);
         player.enabled = true;
     }
 
@@ -97,7 +106,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         if (player.isGrounded && Input.GetButtonDown("Jump") && botas)
         {
-            movePlayer.y = Mathf.Sqrt(7 * jumpForce * gravity);
+            movePlayer.y = Mathf.Sqrt(20 * jumpForce * gravity);
             botas = false;
             animator.SetBool("Saltar", true);
             Invoke("TocaHierba", 90f);
@@ -159,14 +168,14 @@ public class MovimientoJugador : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        /*if (other.CompareTag("iman"))
+        if (other.CompareTag("iman"))
         {
             if (!pico || !botas || !gafas)
             {
                 iman = true;
             }
             Destroy(other.gameObject);
-        }*/
+        }
 
         if (other.CompareTag("gafas"))
         {

@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8733132498373605019, guid: 35b5ea4b4adfd23429b049f64fe71639,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -31,7 +36,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.91
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
@@ -78,11 +83,21 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4385122697076452251, guid: 35b5ea4b4adfd23429b049f64fe71639,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2968188676648537014, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: af15961e5df9d8c42a3487a9589d5227, type: 2}
+    - target: {fileID: -2591156660403817240, guid: 35b5ea4b4adfd23429b049f64fe71639,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1076639699520395223, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
       propertyPath: m_TagString
@@ -113,6 +128,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 4522250347715132166, guid: 35b5ea4b4adfd23429b049f64fe71639,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4998009325482551968, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -122,6 +142,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5750607554549113927, guid: 35b5ea4b4adfd23429b049f64fe71639,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6832967795913132909, guid: 35b5ea4b4adfd23429b049f64fe71639,
         type: 3}
