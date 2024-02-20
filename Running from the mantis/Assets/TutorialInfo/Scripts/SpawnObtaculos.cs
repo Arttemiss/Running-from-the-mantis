@@ -16,16 +16,15 @@ public class SpawnObtaculos : MonoBehaviour
     {
         foreach (var road in roads)
         {
-            SpawnEnCarretera(road);
+            SpawnEnCarretera();
         }
     }
-    public void SpawnEnCarretera(GameObject road)
+    public void SpawnEnCarretera()
     {
         //float roadZ = road.transform.position.z;
+        ZInicial += Separacion;
         for (int i = 0; i < SpawnAmount; i++)
         {
-            ZInicial += Separacion;
-
             if (Random.Range(0, ratioSpawn)== 0)
             {
                 GameObject obstacle = obstacles[Random.Range(0, obstacles.Count)];
