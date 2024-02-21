@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class MovimientoJugador : MonoBehaviour
 {
+    public GameObject imagen;
+    public List<Sprite> iconos;
+    
     float horizontalMove;
     public CharacterController player;
-    
 
+    
     public float playerSpeed;
     public float gravity;
     private Animator animator;
@@ -29,11 +32,14 @@ public class MovimientoJugador : MonoBehaviour
     public bool botas = false;
     public bool iman = false;
     public bool gafas = false;
+    Image otracosa;
 
     private void Start()
     {
         player = GetComponent<CharacterController>();
         animator = transform.GetChild(2).GetComponent<Animator>();
+        otracosa = imagen.GetComponent<Image>();
+        
 
     }
 
@@ -41,7 +47,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         //float horizontal = Input.GetAxis("Horizontal");
         //float vertical = Input.GetAxis("Vertical");
-
+        Cambioicono();
         if (Input.GetKeyDown(KeyCode.A)&& !muerte)
         {
             animator.SetBool("Deslizar_izq", true);
@@ -160,7 +166,7 @@ public class MovimientoJugador : MonoBehaviour
         }
         if (other.CompareTag("Pico"))
         {
-            if (!botas || !iman || !gafas) //|| !otro)
+            if (!botas && !iman && !gafas) //|| !otro)
             {
                 pico = true;
 
@@ -170,16 +176,17 @@ public class MovimientoJugador : MonoBehaviour
 
         if (other.CompareTag("iman"))
         {
-            if (!pico || !botas || !gafas)
+            if (!pico && !botas && !gafas)
             {
                 iman = true;
+                Invoke("Fueraiman", 4);
             }
             Destroy(other.gameObject);
         }
 
         if (other.CompareTag("gafas"))
         {
-            if (!pico || !botas || !iman)
+            if (!pico && !botas && !iman)
             {
                 gafas = true;
             }
@@ -189,16 +196,13 @@ public class MovimientoJugador : MonoBehaviour
         //intento doble salto
         if (other.CompareTag("botas"))
         {
-            if(!pico || !iman || !gafas)
+            if(!pico && !iman && !gafas)
             {
                 botas = true;
-                Destroy(other.gameObject);
+                
             }
-            else
-            {
-                Destroy(other.gameObject);
-
-            }
+            Destroy(other.gameObject);
+            
         }
 
         if (other.CompareTag("Obstacle"))
@@ -219,4 +223,32 @@ public class MovimientoJugador : MonoBehaviour
 
         
     }
+    public void Fueraiman()
+    {
+        iman = false;
+    }
+    public void Cambioicono()
+    {
+        if (botas)
+        {
+            otracosa.sprite = iconos[0];
+        }
+        else if (iman)
+        {
+            otracosa.sprite = iconos[1];
+        }
+        else if (pico)
+        {
+            otracosa.sprite = iconos[2];
+        }
+        else if (gafas)
+        {
+            otracosa.sprite = iconos[3];
+        }
+        else
+        {
+            otracosa.sprite = null;
+        }
+    }
+    
 }
