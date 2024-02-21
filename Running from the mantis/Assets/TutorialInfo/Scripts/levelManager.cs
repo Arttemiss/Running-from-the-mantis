@@ -25,8 +25,9 @@ public class levelManager : MonoBehaviour
 
     public void Restart()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
         mGameOver.SetActive(false);
-        Time.timeScale = 1;
+        
     }
 }

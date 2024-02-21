@@ -25,7 +25,14 @@ public class Coins : MonoBehaviour
     {
         if (collision.CompareTag("burbuja"))
         {
-            gameManagement.sumarPuntos(5);
+            if (gameObject.tag == "Coin")
+            {
+                gameManagement.sumarPuntos(1);
+            }
+            else if (gameObject.tag == "Restar")
+            {
+               gameManagement.sumarPuntos(-5);
+            }
             gameManagement.getPuntos();
         }
         if (collision.CompareTag("Coin Detector"))

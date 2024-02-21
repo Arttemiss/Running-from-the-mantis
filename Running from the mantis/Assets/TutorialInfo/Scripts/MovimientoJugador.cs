@@ -106,13 +106,13 @@ public class MovimientoJugador : MonoBehaviour
     {
         if (player.isGrounded && Input.GetButtonDown("Jump") && botas)
         {
-            movePlayer.y = Mathf.Sqrt(20 * jumpForce * gravity);
+            movePlayer.y = Mathf.Sqrt(7 * jumpForce * gravity);
             botas = false;
             animator.SetBool("Saltar", true);
-            Invoke("TocaHierba", 90f);
+            Invoke("TocaHierba", 2f);
 
         }
-        if (player.isGrounded && Input.GetButtonDown("Jump") && !botas)
+        else if (player.isGrounded && Input.GetButtonDown("Jump") && !botas)
         {
             movePlayer.y = Mathf.Sqrt(2 * jumpForce * gravity);
             animator.SetBool("Saltar", true);

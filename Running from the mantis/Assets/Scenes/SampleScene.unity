@@ -2354,6 +2354,9 @@ MonoBehaviour:
   - {fileID: 1916153221866450315, guid: 0b0ba86c8a24f634dab30281e0f0267d, type: 3}
   - {fileID: 7171058572721969357, guid: 0be6f1b9b36f74b458a548a36913533a, type: 3}
   - {fileID: 7136539706256752459, guid: 11c9050b85fb73e4abc8b48df5394153, type: 3}
+  - {fileID: 4343781442834393308, guid: 56aedb9816bc4f84a9c4fa3373d9f5c7, type: 3}
+  - {fileID: 2237068043400166165, guid: f916db5f50f50e142bed6c2d18b6e569, type: 3}
+  - {fileID: 3097707826352137390, guid: 3381b231262e0204791998102b62c0ad, type: 3}
 --- !u!4 &1537963508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3058205069829636026, guid: 3c29a2322fdc195428190578804ac9a4,
@@ -2635,7 +2638,7 @@ MonoBehaviour:
   - {fileID: 35782116}
   carrilActual: 1
   pico: 0
-  botas: 1
+  botas: 0
   iman: 0
   gafas: 0
 --- !u!143 &1796237662

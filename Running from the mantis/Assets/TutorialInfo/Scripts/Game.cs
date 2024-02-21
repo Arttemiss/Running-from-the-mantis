@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     public void GameMenu()
     {
         SceneManager.LoadScene("SampleScene");
+        Time.timeScale = 1;
 
     }
 }
