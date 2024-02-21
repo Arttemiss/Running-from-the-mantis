@@ -8,7 +8,7 @@ public class iman : MonoBehaviour
 
     private void Start()
     {
-        coinDetectorObj = GameObject.FindGameObjectWithTag("Coin Detector");
+        coinDetectorObj = GameObject.Find("CarrilesPlayer/Player/CoinMagnet");
         coinDetectorObj.SetActive(false);
     }
 
