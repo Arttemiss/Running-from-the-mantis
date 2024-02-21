@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnObtaculos : MonoBehaviour
 {
-    private int SpawnAmount = 4;
+    private int SpawnAmount = 1;
     public int ratioSpawn = 2;
     public int Separacion = 10;
     public float ZInicial = 0;
@@ -16,13 +16,15 @@ public class SpawnObtaculos : MonoBehaviour
     {
         foreach (var road in roads)
         {
-            SpawnEnCarretera();
+            SpawnEnCarretera(road);
         }
     }
-    public void SpawnEnCarretera()
+    public void SpawnEnCarretera(GameObject road)
     {
+       
         //float roadZ = road.transform.position.z;
         ZInicial += Separacion;
+        Debug.Log("Z: " + ZInicial);
         for (int i = 0; i < SpawnAmount; i++)
         {
             if (Random.Range(0, ratioSpawn)== 0)

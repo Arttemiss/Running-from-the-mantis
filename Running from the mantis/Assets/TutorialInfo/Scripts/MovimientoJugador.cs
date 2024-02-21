@@ -116,7 +116,7 @@ public class MovimientoJugador : MonoBehaviour
         {
             movePlayer.y = Mathf.Sqrt(2 * jumpForce * gravity);
             animator.SetBool("Saltar", true);
-            Invoke("TocaHierba", 1.3f);
+            Invoke("TocaHierba", 2f);
 
 
         }
