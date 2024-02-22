@@ -16,6 +16,12 @@ public class Coins : MonoBehaviour
         gameManagement = GameObject.FindGameObjectWithTag("GameController").GetComponent<ControladorPuntuacion>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         coinMoveScript = gameObject.GetComponent<CoinMove>();
+
+        if (this.gameObject.CompareTag("Coin"))
+        {
+            coinMoveScript = gameObject.GetComponent<CoinMove>();
+        }
+        
     }
     private void Update()
     {
@@ -37,7 +43,10 @@ public class Coins : MonoBehaviour
         }
         if (collision.CompareTag("Coin Detector"))
         {
-            coinMoveScript.enabled = true;
+            if (gameObject.tag == "Coin")
+            {
+                coinMoveScript.enabled = true;
+            }
         }
         
     }

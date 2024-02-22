@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
+  - enabled: 0
+    path: Assets/Scenes/PauseMenu.unity
+    guid: 585e4098e0e3e0f4db324d2b231765b8
+  - enabled: 0
+    path: Assets/Scenes/Controles.unity
+    guid: 7fd522780a479464fb60dee31256dd1d
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2b242778c4b8a2c4c81eb85807b127ad,
       type: 2}
