@@ -160,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -14.775, y: -274.51}
-  m_SizeDelta: {x: 1325.5, y: 549.03}
+  m_SizeDelta: {x: 974.2, y: 549.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &311974408
 MonoBehaviour:
@@ -886,7 +886,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -14.78, y: 406.63}
-  m_SizeDelta: {x: 1325.53, y: 521.22}
+  m_SizeDelta: {x: 949.36, y: 521.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1341554914
 MonoBehaviour:
@@ -1156,7 +1156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MENU INICIAL
+  m_text: "MENU \nINICIAL"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffc6aa190ebd4704facf0e21a3c49683, type: 2}
   m_sharedMaterial: {fileID: 868931968995515891, guid: ffc6aa190ebd4704facf0e21a3c49683,
@@ -1184,8 +1184,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 140
-  m_fontSizeBase: 140
+  m_fontSize: 119
+  m_fontSizeBase: 119
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1271,7 +1271,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -9, y: 100.09}
-  m_SizeDelta: {x: 1298.55, y: 526.2}
+  m_SizeDelta: {x: 959.2, y: 526.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1643442672
 MonoBehaviour:

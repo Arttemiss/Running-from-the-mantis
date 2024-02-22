@@ -6,8 +6,8 @@ public class CameraController : MonoBehaviour
 {
     Transform player;
 
-    float yoffset = 6;
-    float zoffset = -7;
+    float yoffset = 10;
+    float zoffset = -24;
     
     void Start()
     {

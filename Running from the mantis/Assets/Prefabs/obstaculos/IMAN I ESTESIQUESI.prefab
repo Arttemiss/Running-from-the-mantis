@@ -66,7 +66,7 @@ Transform:
   m_GameObject: {fileID: 614806020483057640}
   serializedVersion: 2
   m_LocalRotation: {x: -0.83376557, y: 0, z: 0, w: 0.5521186}
-  m_LocalPosition: {x: -4, y: 0, z: 3.15}
+  m_LocalPosition: {x: -4, y: 0, z: 3.5}
   m_LocalScale: {x: 51.562096, y: 51.562096, z: 73.53957}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -240,7 +240,7 @@ Transform:
   m_GameObject: {fileID: 756017242625320328}
   serializedVersion: 2
   m_LocalRotation: {x: -0.83376557, y: 0, z: 0, w: 0.5521186}
-  m_LocalPosition: {x: 4, y: 0, z: 3.15}
+  m_LocalPosition: {x: 4, y: 0, z: 3.5}
   m_LocalScale: {x: 51.562096, y: 51.562096, z: 73.53957}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -414,7 +414,7 @@ Transform:
   m_GameObject: {fileID: 3768878571112830076}
   serializedVersion: 2
   m_LocalRotation: {x: -0.83376557, y: 0, z: 0, w: 0.5521186}
-  m_LocalPosition: {x: 0, y: 0, z: 3.15}
+  m_LocalPosition: {x: 0, y: 0, z: 3.5}
   m_LocalScale: {x: 51.562096, y: 51.562096, z: 73.53957}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 7515938499252248009}
   - component: {fileID: 7200414237186836040}
   - component: {fileID: 6047843901363017876}
+  - component: {fileID: 978989130239872025}
   m_Layer: 0
   m_Name: "Im\xE1n"
   m_TagString: iman
@@ -635,6 +636,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86ed0ea18bf2ce84181346a6f63846ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &978989130239872025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350090981006359501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1505d0b491efce439d87f92d61f55ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7021631944467849266
