@@ -115,14 +115,14 @@ public class MovimientoJugador : MonoBehaviour
             movePlayer.y = Mathf.Sqrt(4 * jumpForce * gravity);
             botas = false;
             animator.SetBool("Saltar", true);
-            Invoke("TocaHierba", 2f);
+            Invoke("TocaHierba", 3f);
 
         }
         else if (player.isGrounded && Input.GetButtonDown("Jump") && !botas)
         {
             movePlayer.y = Mathf.Sqrt(2 * jumpForce * gravity);
             animator.SetBool("Saltar", true);
-            Invoke("TocaHierba", 2f);
+            Invoke("TocaHierba", 1.6f);
 
 
         }
@@ -241,13 +241,10 @@ public class MovimientoJugador : MonoBehaviour
         {
             otracosa.sprite = iconos[2];
         }
-        else if (gafas)
-        {
-            otracosa.sprite = iconos[3];
-        }
+        
         else
         {
-            otracosa.sprite = null;
+            otracosa.sprite = iconos[3];
         }
     }
     

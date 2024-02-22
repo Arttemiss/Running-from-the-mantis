@@ -1410,7 +1410,7 @@ Transform:
   m_GameObject: {fileID: 847978790}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.1, z: 0}
+  m_LocalPosition: {x: 0, y: 2.1, z: -0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1448,10 +1448,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.99
-  m_Height: 4.59
+  m_Radius: 1.05
+  m_Height: 4.02
   m_Direction: 1
-  m_Center: {x: 0, y: -0.35, z: 0.03}
+  m_Center: {x: 0, y: -0.26, z: 0.24}
 --- !u!1 &869959146 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2661528503691160676, guid: 3c29a2322fdc195428190578804ac9a4,
@@ -2827,7 +2827,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 335cd1025495ede49b3bcbd5b4bf5427, type: 3}
   - {fileID: 21300000, guid: af6128c644e434349b572e8da9b83b19, type: 3}
   - {fileID: 21300000, guid: 76296cab003c1ba469f9baf6fd582d95, type: 3}
-  - {fileID: 21300000, guid: c1cebf3c32ca7364ba25f50c4107939d, type: 3}
+  - {fileID: 21300000, guid: 6493a9cac731047489c910047f48357b, type: 3}
   player: {fileID: 1796237662}
   playerSpeed: 10
   gravity: 14
